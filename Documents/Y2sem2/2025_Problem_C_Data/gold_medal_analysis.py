@@ -8,10 +8,10 @@ from sklearn.metrics import r2_score
 data = pd.read_csv("summerOly_medal_counts.csv")
 
 # Extract x and y columns
-china_data = data[data['NOC'] == 'China']
+country_data = data[data['NOC'] == 'France']
 
-x = china_data['Year']
-y = china_data['Gold']
+x = country_data['Year']
+y = country_data['Gold']
 
 # Define the linear model
 def linear_model(x, m, b):
